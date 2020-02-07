@@ -1,0 +1,11 @@
+---
+wideContainer: true
+---
+
+<h2>All Online Articles</h2>
+
+<div class="grid three-col" markdown="1">
+{% for post in site.posts %}
+{% include article-card.html %}
+{% endfor %}
+</div>

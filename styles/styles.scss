@@ -1,0 +1,140 @@
+---
+--- 
+
+// variables
+$sans-serif: system-ui;
+$serif: PT Serif, serif;
+$body-text-color: #333;
+$light-text-color: #555;
+$head-text-color: #222;
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// hero
+header {
+  text-align: center;
+  font-family: $sans-serif;
+  height: 50vh;
+  background: center/cover url('https://res.cloudinary.com/echroma/image/upload/v1535859877/chroma_banner4.jpg');
+}
+
+.dark-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .65));
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+header h1 {
+  margin: 0 auto 2rem;
+  width: 700px;
+}
+
+header h2 {
+  width: 100%;
+  font: bold 2rem/100% $serif;
+  color: #ddd;
+}
+
+// structure
+.thin-container, .wide-container {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.thin-container {
+  max-width: 650px;
+}
+
+.wide-container {
+  max-width: 1100px;
+}
+
+// typography
+h2 {
+  font: bold 2.5rem $serif;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font: normal 1.5rem/140% $serif;
+}
+
+p {
+  font: normal 1.1rem/140% $serif;
+  margin: 1.1rem 0;
+  color: $body-text-color;
+}
+
+// nav
+nav {
+  padding: .75rem 10vw; 
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+}
+
+nav ul {
+  align-self: center;
+}
+
+nav li {
+  display: inline-block;
+
+  line-height: 1.5rem;
+}
+
+.logo {
+  font: bold 1.5rem/100% $sans-serif;
+  color: $head-text-color;
+}
+
+nav li a {
+  margin-left: 1rem;
+  font: normal 1rem/100% $sans-serif;
+  color: $body-text-color;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+}
+
+.three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+
+// article card
+
+article img {
+  width: 100%;
+}
+
+article h3 a {
+  text-decoration: none;
+  color: $head-text-color;
+  margin: .75rem 0 .25rem;
+  display: block;
+  font: bold 1.5rem/125% $serif;
+}
+
+.card .post-info {
+  font: normal .9rem/150% $sans-serif;
+  text-transform: uppercase;
+  color: $light-text-color;
+  display: inline-block;
+}

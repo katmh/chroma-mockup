@@ -1,0 +1,43 @@
+url: https://mitchroma.ink
+
+title: MIT Chroma
+
+# description for search engines and social media previews
+description: MIT's Science and Humanities Magazine.
+
+navLinks:
+  - title: About
+    url: about
+  - title: Articles
+    url: articles
+  - title: Print Issues
+    url: https://issuu.com/mitchroma
+
+
+
+# below are the settings that
+# you probably don't want to change
+# unless you know what you're doing
+
+defaults:
+  # applies the default layout (_layouts/default.html) to all files
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  # set is_post=true for all posts
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
+
+# use clean permalinks, e.g. /about instead of /about.html
+# TODO: decide on permalink pattern
+permalink: /:title
+
+# minimize the CSS file generated from the SCSS (preprocessor) file
+sass:
+  style: compressed

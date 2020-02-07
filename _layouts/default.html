@@ -1,0 +1,24 @@
+{% include head.html %}
+
+{% include nav.html %}
+
+{% if page.url == "/" %}
+{% include hero.html %}
+{% endif %}
+
+{% if page.wideContainer %}
+<div class="wide-container">
+  {{ content }}
+</div>
+{% endif %}
+
+{% unless page.wideContainer %}
+<div class="thin-container">
+  {% if page.is_post %}
+    {% include article.html %}
+  {% endif %}
+  {{ content }}
+</div>
+{% endunless %}
+
+{% include footer.html %}
