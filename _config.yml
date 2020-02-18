@@ -41,3 +41,9 @@ permalink: /:title
 # minimize the CSS file generated from the SCSS (preprocessor) file
 sass:
   style: compressed
+
+gems:
+  - jekyll/tagging
+
+tag_page_layout: tag-page
+tag_page_dir: tag
