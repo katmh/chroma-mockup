@@ -39,8 +39,8 @@ defaults:
 permalink: /:title
 
 # minimize the CSS file generated from the SCSS (preprocessor) file
-sass:
-  style: compressed
+#sass:
+  #style: compressed
 
 gems:
   - jekyll/tagging
